@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>tab component</title>
+  <style>
+    .clearfix::after{
+      content: '';
+      display: block;
+      clear: both;
+    }
+    ol,li{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .tab{
+      width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    .tab>.tab-nav{
+      border-bottom: 1px solid #ccc;
+    }
+    .tab>.tab-nav>li{
+      float: left;
+      padding: 10px 20px;
+      color: brown;
+      cursor: pointer;
+    }
+    .tab>.tab-nav>li.active{
+      border: 1px solid #ccc;
+      border-bottom: 1px solid #fff;
+      border-radius: 3px 3px 0 0;
+      margin-bottom: -1px;
+      color: #000;
+    }
+    .tab>.tab-panels>li{
+      display: none;
+      height: 300px;
+      padding: 20px;
+    }
+    .tab>.tab-panels>li.active{
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="tab">
+    <ol class="tab-nav clearfix">
+      <li>选项1</li>
+      <li>选项2</li>
+      <li>选项3</li>
+    </ol>
+    <ol class="tab-panels">
+      <li>内容1</li>
+      <li>内容2</li>
+      <li>内容3</li>
+    </ol>
+  </div>
+  <script src='../lib/jquery-3.3.1.min.js'></script>
+  <script src='../lib/tab.js'></script>
+</body>
+</html>
