@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Dialog</title>
+    <style type="text/css" media="all">
+      /*==组件配套样式==*/
+      #sean-dialog{
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 125, 125, .5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #sean-dialog>.wrapper{
+        min-width: 300px;
+        padding: 20px;
+        background-color: #fff;
+      }
+      #sean-dialog header{
+        font-size: 1.2em;
+        font-weight: 900;
+        border-bottom: 1px solid;
+      }
+      #sean-dialog main{
+        margin: 10px 0;
+      }
+      #sean-dialog footer{
+        text-align: right;
+        border-top: 1px solid;
+        padding-top: 5px;
+      }
+      #sean-dialog footer>button{
+        margin-left: 10px;
+      }
+
+      /*==客户自定义==*/
+      .user-dialog{
+        z-index: 9999;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button id="clickme">click me</button>
+    <script src='../lib/jquery-3.3.1.min.js'></script>
+    <script src='../lib/dialog.js'></script>
+  </body>
+
+</html>
