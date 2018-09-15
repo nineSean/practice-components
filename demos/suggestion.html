@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="description" content="suggestion组件" />
+  <meta charset="utf-8">
+  <title>suggestion component</title>
+  <style>
+    #sean-suggestion {
+      position: relative;
+      display: inline-block;
+    }
+
+    #sean-suggestion .suggestion-list {
+      list-style: none;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      border: 1px solid;
+    }
+
+    #sean-suggestion .suggestion-list li:hover {
+      background-color: #ddd;
+    }
+
+    #sean-suggestion .suggestion-list.hide,
+    #sean-suggestion .suggestion-loading.hide {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <input type="text" placeholder="搜索 github repos">
+  <script src='../lib/jquery-3.3.1.min.js'></script>
+  <script src='../lib/suggestion.js'></script>
+</body>
+
+</html>
